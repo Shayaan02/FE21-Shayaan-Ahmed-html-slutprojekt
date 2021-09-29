@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+/* CSS som gäller för allt */
+.flexcontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+  
+}
+.items {
+    padding: 1.5rem;
+}
+
+.wrapper{
+    min-height: 100vh;
+}
+header{
+    text-align: center;
+    padding-top: 2rem;
+    background-color: #000000;
+    color: rgb(10, 228, 173);
+    font-family: 'Bebas Neue';
+}
+
+main{
+    padding: 1rem;
+    background-color: #CDD1CC;
+}
+
+footer{
+    background-color: #99BFB3;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.connor {
+    width: 100%;
+}
+.silva {
+    width: 100%;
+
+}
+
+/* About css */
+
+.about {
+    font-family: 'Bebas Neue';
+    text-align: center;
+    text-decoration: underline;
+
+}
+.profilbild {
+    height: 500px;
+    width: 400px;
+
+}
+
+.bildtextright {
+    width: 55%;
+}
+.bildtext {
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+ 
+}
+.aboutflex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Nav bar för alla layouter */
+nav{
+    background-color:rgb(0, 0, 0);
+    display: flex;
+    justify-content: flex-end;
+     align-items: center;
+    position: sticky;
+    top: 0;
+  
+}
+nav a{
+    padding: .25rem;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(10, 228, 173);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 12px;
+      
+}
+
+/* Grid Layouten */
+.wrapper{
+    display: grid;
+    grid-template-columns: auto 10rem;
+    grid-template-rows: 8rem 4rem auto 6rem;
+}
+header{
+    grid-row: 1/2;
+    grid-column: 1/3; 
+}
+nav{
+    grid-row: 2/3;
+    grid-column: 1/3;
+}
+main{
+    grid-row: 3/4;
+    grid-column: 1/3;
+
+}
+footer{ 
+    grid-row: 4/5;
+    grid-column: 1/3;
+}
+
+/* @media  screen and (min-width: 650px) {
+    
+} */
+
+/* Slideshow */
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #0bf0a3;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #12c09a;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+/* media */
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+@media screen and (max-width:600px) {
+  nav   {
+     width: 100%;
+     background-color: black;
+    position: absolute;
+    top: 75px;
+    
+    
+ }
+ nav a {
+     color:rgb(10, 228, 173);
+ }
+.flexcontainer {
+    max-width: 100vw;
+}
+
+
+header {
+    font-size: 1rem;
+    text-align: start;
+}
+
+footer {
+    font-size: 0.5rem;
+}
+
+p {
+    font-size: 10px;
+    padding: 1.5rem;
+}
+
+.connor {
+width: 100%;
+}
+
+
+iframe {
+    width: 100%;
+}
+
+.silva {
+    width: 100%;
+}
+
+.brock {
+    width: 100%;
+}
+.justin {
+    width: 100%;
+}
+.khabib {
+    width: 100%;
+}
+.profilbild {
+    width: 100%;
+}
+h3 {
+    width: 100%;
+    font-size: 1rem;
+    
+}
+
+.aboutflex {
+    flex-direction: column;
+}
+}

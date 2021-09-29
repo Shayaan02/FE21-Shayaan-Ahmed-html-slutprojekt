@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Grid Layout</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Shayaan Ahmed</h1>
+        </header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="information.html">About</a>
+            <a href="contact.html">Contact</a>
+
+        </nav>
+        <main>
+
+            <h1>Khabib Nurmagomedov</h1>
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="images/slideshow.jpeg" style="width:100%">
+                    <div class="text">29</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="images/s,¨,.jpeg" style="width:100%">
+                    <div class="text">0</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="images/slideshow3.jpeg" style="width:100%">
+                    <div class="text">0</div>
+                </div>
+
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+
+            <script>
+                var slideIndex = 0;
+                showSlides();
+
+                function showSlides() {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("dot");
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    slideIndex++;
+                    if (slideIndex > slides.length) { slideIndex = 1 }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " active";
+                    setTimeout(showSlides, 2000); // Change image every 2 seconds
+                }
+            </script>
+            <p> Khabib Nurmagomedov born 20 September 1988 is a Russian retired professional mixed martial artist. He
+                competed in the lightweight division of the Ultimate Fighting Championship (UFC), where he was the
+                longest-reigning UFC Lightweight Champion, having held the title from April 2018 to March 2021. With 29
+                wins and no losses, he retired with an undefeated record.</p>
+
+        </main>
+        <footer>
+            <h3>Moglys Show :)</h3>
+        </footer>
+    </div>
+</body>
+
+</html>
